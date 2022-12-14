@@ -16,3 +16,16 @@
 .green {
   background: green;
 }
+.container > div {
+  place-items: center;
+  text-align: center;
+  border: solid 1px;
+  border-radius: 5px;
+  padding: 5px;
+}
+.container {
+  gap: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
