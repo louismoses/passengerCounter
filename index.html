@@ -1,17 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <h1>People entered: </h1>
-    <h2 id="count-el">0</h2>
-    <button id="increment-btn">INCREMENT</button>
-
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div>
+      <h1>Red Bus Passenger:</h1>
+      <h2 id="count-el-red">0</h2>
+      <button class="red increment-btn" onclick="incrementRed()">
+        INCREMENT
+      </button>
+    </div>
+    <div>
+      <h1>Green Bus Passenger:</h1>
+      <h2 id="count-el-green">0</h2>
+      <button class="green increment-btn" onclick="incrementGreen()">
+        INCREMENT
+      </button>
+    </div>
+    <div>
+      <h1>Blue Bus Passenger:</h1>
+      <h2 id="count-el-blue">0</h2>
+      <button class="blue increment-btn" onclick="incrementBlue()">
+        INCREMENT
+      </button>
+    </div>
 
     <script src="index.js"></script>
-</body>
+  </body>
 </html>

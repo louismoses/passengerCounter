@@ -1,0 +1,18 @@
+.increment-btn {
+  border: none;
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+  width: 200px;
+  margin: 5px;
+  border-radius: 5px;
+}
+.red {
+  background: darkred;
+}
+.blue {
+  background: blue;
+}
+.green {
+  background: green;
+}
