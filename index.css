@@ -1,3 +1,8 @@
+h1 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: grey;
+  font-weight: bold;
+}
 .increment-btn {
   border: none;
   padding: 10px;
