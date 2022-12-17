@@ -20,3 +20,11 @@ function incrementGreen() {
 function save() {
   console.log(redBusCount + greenBusCount + blueBusCount);
 }
+//  scratch section
+
+let username = "per";
+let message = "You have tree new notifications";
+let messageToUser = message + ", " + username;
+console.log(messageToUser);
+
+//  scratch section end
