@@ -4,6 +4,7 @@ let greenBusCount = 0;
 let countElRed = document.getElementById("count-el-red");
 let countElBlue = document.getElementById("count-el-blue");
 let countElGreen = document.getElementById("count-el-green");
+let saveEl = document.getElementById("save-el");
 
 function incrementRed() {
   redBusCount += 1;
@@ -18,13 +19,16 @@ function incrementGreen() {
   countElGreen.innerText = greenBusCount;
 }
 function save() {
-  console.log(redBusCount + greenBusCount + blueBusCount);
+  let totalCount = redBusCount + greenBusCount + blueBusCount;
+  saveEl.innerText += " " + totalCount + " - ";
 }
 //  scratch section
 
-let username = "per";
-let message = "You have tree new notifications";
-let messageToUser = message + ", " + username;
-console.log(messageToUser);
+let welcomeEl = document.getElementById("welcome-el");
+let myname = "Moses";
+let greeting = "Hi, welcome back to the page ";
+
+welcomeEl.innerText = greeting + myname;
+welcomeEl.innerHTML += "👍";
 
 //  scratch section end
