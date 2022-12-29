@@ -5,6 +5,9 @@ let countElRed = document.getElementById("count-el-red");
 let countElBlue = document.getElementById("count-el-blue");
 let countElGreen = document.getElementById("count-el-green");
 let saveEl = document.getElementById("save-el");
+let saveRedEl = document.getElementById("saveRed-el");
+let saveGreenEl = document.getElementById("saveGreen-el");
+let saveBlueEl = document.getElementById("saveBlue-el");
 
 function incrementRed() {
   redBusCount += 1;
@@ -20,15 +23,14 @@ function incrementGreen() {
 }
 function save() {
   let totalCount = redBusCount + greenBusCount + blueBusCount;
-  saveEl.innerText += " " + totalCount + " - ";
+  saveEl.textContent += " " + totalCount + " - ";
+  saveRedEl.textContent += " " + redBusCount + " - ";
+  saveGreenEl.textContent += " " + greenBusCount + " - ";
+  saveBlueEl.textContent += " " + blueBusCount + " - ";
+  countElRed.innerText = 0;
+  redBusCount = 0;
+  countElGreen.innerText = 0;
+  greenBusCount = 0;
+  countElBlue.innerText = 0;
+  blueBusCount = 0;
 }
-//  scratch section
-
-let welcomeEl = document.getElementById("welcome-el");
-let myname = "Moses";
-let greeting = "Hi, welcome back to the page ";
-
-welcomeEl.innerText = greeting + myname;
-welcomeEl.innerHTML += "👍";
-
-//  scratch section end

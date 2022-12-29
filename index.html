@@ -6,40 +6,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="index.css" />
+    <!-- BOOTSTRAP -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
   </head>
+  <!--  -->
   <body>
+    <div class="container"><hr /></div>
     <div class="container">
-      <div>
-        <h1>Red Bus Passenger:</h1>
-        <h2 id="count-el-red">0</h2>
-        <button class="red increment-btn" onclick="incrementRed()">
-          INCREMENT
-        </button>
+      <!-- red card -->
+      <div class="card text-center">
+        <div class="card-body">
+          <h3 class="card-title">Red Bus Passenger:</h3>
+          <h4 class="card-text" id="count-el-red">0</h4>
+          <a href="#" class="btn btn-danger" onclick="incrementRed()"
+            >INCREMENT</a
+          >
+        </div>
+        <div class="card-footer text-muted" id="saveRed-el">
+          Previous entries:
+        </div>
       </div>
-      <div>
-        <h1>Green Bus Passenger:</h1>
-        <h2 id="count-el-green">0</h2>
-        <button class="green increment-btn" onclick="incrementGreen()">
-          INCREMENT
-        </button>
+      <!-- green card -->
+      <div class="card text-center">
+        <div class="card-body">
+          <h3 class="card-title">Green Bus Passenger:</h3>
+          <h4 class="card-text" id="count-el-green">0</h4>
+          <a href="#" class="btn btn-success" onclick="incrementGreen()"
+            >INCREMENT</a
+          >
+        </div>
+        <div class="card-footer text-muted" id="saveGreen-el">
+          Previous entries:
+        </div>
       </div>
-      <div>
-        <h1>Blue Bus Passenger:</h1>
-        <h2 id="count-el-blue">0</h2>
-        <button class="blue increment-btn" onclick="incrementBlue()">
-          INCREMENT
-        </button>
+      <!-- blue card -->
+      <div class="card text-center">
+        <div class="card-body">
+          <h3 class="card-title">Blue Bus Passenger:</h3>
+          <h4 class="card-text" id="count-el-blue">0</h4>
+          <a href="#" class="btn btn-primary" onclick="incrementBlue()"
+            >INCREMENT</a
+          >
+        </div>
+        <div class="card-footer text-muted" id="saveBlue-el">
+          Previous entries:
+        </div>
       </div>
     </div>
-
-    <button onclick="save()">SAVE</button>
-    <p id="save-el">Previous entries:</p>
-    <hr />
-    <!-- scratch section -->
-
-    <p id="welcome-el"></p>
-
-    <!-- scratch section end -->
+    &nbsp;
+    <div class="text-center">
+      <button type="button" class="btn btn-dark" onclick="save()">SAVE</button>
+      <div class="container">
+        <h4 id="save-el">Previous Total entries:</h4>
+      </div>
+      <hr />
+    </div>
     <script src="index.js"></script>
   </body>
 </html>
